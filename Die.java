@@ -1,27 +1,19 @@
 public class Die
 {
-  //private int d1;
-  //private int d2;
-  private int total;
-  private int point;
-  private int lose[];
-  private int win[];
+  private int roll;
 
   public Die()
   {
-    lose[] = {2,3,12};
-    win[] = {7,11};
+    roll = roll();
   }
 
-  public int roll(int phase)
+  public int roll()
   {
-    if (phase == 0)
-    {
-      total = (int)((Math.random() * 6) + 1) + (int)((Math.random() * 6) + 1);
-    }
-    else if (phase == 1)
-    {
-
-    }
+    roll = (int)((Math.random() * 6) + 1);
+    return roll;
+  }
+  public int getRoll()
+  {
+    return roll;
   }
 }
