@@ -13,8 +13,9 @@ public class Dice
   {
     return d1.roll() + d2.roll();
   }
-  public int getRolls()
+  public String getRolls()
   {
-    return "D1: " + d1.getRoll() + "D2: " + d2.getRoll();
+    int total = d1.getRoll() + d2.getRoll();
+    return "D1: " + d1.getRoll() + " D2: " + d2.getRoll() + " Total: " + total;
   }
 }
