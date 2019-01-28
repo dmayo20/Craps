@@ -18,6 +18,7 @@ public class Craps
       Thread.sleep(200);
       roll = d.roll();
       System.out.println(d.getRolls());
+      System.out.println(d);
       Thread.sleep(200);
       if (phase == 0)
       {

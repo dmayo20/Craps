@@ -18,4 +18,8 @@ public class Dice
     int total = d1.getRoll() + d2.getRoll();
     return "D1: " + d1.getRoll() + " D2: " + d2.getRoll() + " Total: " + total;
   }
+  public String toString()
+  {
+    return d1.toString() + d2.toString();
+  }
 }
